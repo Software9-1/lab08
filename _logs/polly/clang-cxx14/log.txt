@@ -14,33 +14,20 @@ cmake version 3.22.1
 CMake suite maintained and supported by Kitware (kitware.com/cmake).
 Execute command: [
   `cmake`
-  `-H.`
-  `-B/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14`
-  `-GUnix Makefiles`
-  `-DCMAKE_TOOLCHAIN_FILE=/home/software09/Software9-1/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+  `--build`
+  `/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14`
+  `--`
 ]
-[/home/software09/Software9-1/workspace/projects/lab07]> "cmake" "-H." "-B/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/home/software09/Software9-1/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+[/home/software09/Software9-1/workspace/projects/lab07]> "cmake" "--build" "/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14" "--"
 -- [polly] Used toolchain: clang / c++14 support
--- The C compiler identification is Clang 14.0.0
--- The CXX compiler identification is Clang 14.0.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- [hunter] Calculating Toolchain-SHA1
 -- [hunter] Calculating Config-SHA1
--- [hunter] HUNTER_ROOT: /home/software09/projects/hunter
--- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 7cc05f8 | Config-ID: 1fcf4ef ]
--- [hunter] GTEST_ROOT: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Install (ver.: 1.15.2)
+-- [hunter] HUNTER_ROOT: /home/software09/.hunter
+-- [hunter] [ Hunter-ID: 23f1b5a | Toolchain-ID: 7cc05f8 | Config-ID: bf2be25 ]
+-- [hunter] GTEST_ROOT: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Install (ver.: 1.11.0)
 -- [hunter] Building GTest
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/cache.cmake
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/args.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/cache.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/args.cmake
 -- [polly] Used toolchain: clang / c++14 support
 -- The C compiler identification is Clang 14.0.0
 -- The CXX compiler identification is Clang 14.0.0
@@ -52,17 +39,22 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Build
+-- Build files have been written to: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build
+gmake[1]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[2]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[3]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[3]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[3]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
 [  6%] Creating directories for 'GTest-Release'
 [ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
 -- verifying file...
-       file='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+       file='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
 -- File already exists and hash match (skip download):
-  file='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+  file='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
+  SHA1='7b100bb68db8df1060e178c495f3cbe941c9b058'
 -- extracting...
-     src='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Source'
+     src='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
+     dst='/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Source'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -71,8 +63,8 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 [ 18%] No update step for 'GTest-Release'
 [ 25%] No patch step for 'GTest-Release'
 [ 31%] Performing configure step for 'GTest-Release'
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/cache.cmake
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/args.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/cache.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/args.cmake
 -- [polly] Used toolchain: clang / c++14 support
 -- The C compiler identification is Clang 14.0.0
 -- The CXX compiler identification is Clang 14.0.0
@@ -82,6 +74,7 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 -- Check for working CXX compiler: /usr/bin/clang++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter
 -- Looking for pthread.h
 -- Looking for pthread.h - found
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
@@ -89,94 +82,139 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 -- Found Threads: TRUE
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
+-- Build files have been written to: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
 [ 37%] Performing build step for 'GTest-Release'
+gmake[4]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[5]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 [ 25%] Linking CXX static library ../lib/libgtest.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 25%] Built target gtest
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
 [ 62%] Linking CXX static library ../lib/libgtest_main.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 62%] Built target gtest_main
 [ 75%] Linking CXX static library ../lib/libgmock.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 75%] Built target gmock
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 [100%] Linking CXX static library ../lib/libgmock_main.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [100%] Built target gmock_main
+gmake[5]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[4]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
 [ 43%] Performing install step for 'GTest-Release'
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgmock.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgmock_main.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest_prod.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-spi.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-printers.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-message.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgtest.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgtest_main.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/args.cmake
+gmake[4]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[5]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+Consolidate compiler generated dependencies of target gtest
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+[ 25%] Built target gtest
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+Consolidate compiler generated dependencies of target gmock
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+[ 50%] Built target gmock
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+Consolidate compiler generated dependencies of target gmock_main
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+[ 75%] Built target gmock_main
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+Consolidate compiler generated dependencies of target gtest_main
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+[100%] Built target gtest_main
+gmake[5]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgmock.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgmock_main.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-message.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgtest.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgtest_main.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+gmake[4]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build'
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/args.cmake
 [ 50%] Completed 'GTest-Release'
+gmake[3]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
 [ 50%] Built target GTest-Release
+gmake[3]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[3]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[3]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
 [ 56%] Creating directories for 'GTest-Debug'
 [ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
 -- verifying file...
-       file='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
+       file='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
 -- File already exists and hash match (skip download):
-  file='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-  SHA1='568d58e26bd4e838449ca7ab8ebc152b3cbd210d'
+  file='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
+  SHA1='7b100bb68db8df1060e178c495f3cbe941c9b058'
 -- extracting...
-     src='/home/software09/projects/hunter/_Base/Download/GTest/1.15.2/568d58e/v1.15.2.tar.gz'
-     dst='/home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Source'
+     src='/home/software09/.hunter/_Base/Download/GTest/1.11.0/7b100bb/release-1.11.0.tar.gz'
+     dst='/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Source'
 -- extracting... [tar xfz]
 -- extracting... [analysis]
 -- extracting... [rename]
@@ -185,8 +223,8 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 [ 68%] No update step for 'GTest-Debug'
 [ 75%] No patch step for 'GTest-Debug'
 [ 81%] Performing configure step for 'GTest-Debug'
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/cache.cmake
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/args.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/cache.cmake
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/args.cmake
 -- [polly] Used toolchain: clang / c++14 support
 -- The C compiler identification is Clang 14.0.0
 -- The CXX compiler identification is Clang 14.0.0
@@ -196,6 +234,7 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 -- Check for working CXX compiler: /usr/bin/clang++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+-- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter
 -- Looking for pthread.h
 -- Looking for pthread.h - found
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
@@ -203,100 +242,135 @@ loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f
 -- Found Threads: TRUE
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
+-- Build files have been written to: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
 [ 87%] Performing build step for 'GTest-Debug'
+gmake[4]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[5]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 [ 25%] Linking CXX static library ../lib/libgtestd.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 25%] Built target gtest
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 50%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 [ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
 [ 62%] Linking CXX static library ../lib/libgtest_maind.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 62%] Built target gtest_main
 [ 75%] Linking CXX static library ../lib/libgmockd.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 75%] Built target gmock
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
 [100%] Linking CXX static library ../lib/libgmock_maind.a
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [100%] Built target gmock_main
+gmake[5]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[4]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
 [ 93%] Performing install step for 'GTest-Debug'
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-more-matchers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/README.md
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-port.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/internal/gmock-pp.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-matchers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-cardinalities.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-nice-strict.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-more-actions.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-spec-builders.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-function-mocker.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gmock/gmock-actions.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgmockd.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgmock_maind.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gmock.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest_prod.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest_pred_impl.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-spi.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-matchers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-internal.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/README.md
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-port.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-string.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-param-test.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-test-part.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-printers.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-assertion-result.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-typed-test.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-message.h
--- Up-to-date: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/include/gtest/gtest-death-test.h
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgtestd.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/libgtest_maind.a
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gtest.pc
--- Installing: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
-loading initial cache file /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest/args.cmake
+gmake[4]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[5]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+Consolidate compiler generated dependencies of target gtest
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+[ 25%] Built target gtest
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+Consolidate compiler generated dependencies of target gmock
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+[ 50%] Built target gmock
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+Consolidate compiler generated dependencies of target gmock_main
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+[ 75%] Built target gmock_main
+gmake[6]: Entering directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+Consolidate compiler generated dependencies of target gtest_main
+gmake[6]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+[100%] Built target gtest_main
+gmake[5]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgmockd.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgmock_maind.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-message.h
+-- Up-to-date: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgtestd.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/libgtest_maind.a
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+gmake[4]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build'
+loading initial cache file /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/args.cmake
 [100%] Completed 'GTest-Debug'
+gmake[3]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
 [100%] Built target GTest-Debug
--- [hunter] Build step successful (dir: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Build/GTest)
--- [hunter] Cache saved: /home/software09/projects/hunter/_Base/Cache/raw/1537f8d519ba21baa1fcce9f0232f51e86a43b5f.tar.bz2
--- Found GTest: /home/software09/projects/hunter/_Base/xxxxxxx/7cc05f8/1fcf4ef/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.15.2")
+gmake[2]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+gmake[1]: Leaving directory '/home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest/Build'
+-- [hunter] Build step successful (dir: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Build/GTest)
+-- [hunter] Cache saved: /home/software09/.hunter/_Base/Cache/raw/8986b1c244b1842db3a1f027b95c684bac7f4d28.tar.bz2
+-- Found GTest: /home/software09/.hunter/_Base/23f1b5a/7cc05f8/bf2be25/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.11.0")
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14
-Execute command: [
-  `cmake`
-  `--build`
-  `/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14`
-  `--`
-]
-[/home/software09/Software9-1/workspace/projects/lab07]> "cmake" "--build" "/home/software09/Software9-1/workspace/projects/lab07/_builds/clang-cxx14" "--"
-[ 25%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
-[ 50%] Linking CXX static library libprint.a
+Consolidate compiler generated dependencies of target print
 [ 50%] Built target print
-[ 75%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
-[100%] Linking CXX executable demo
+Consolidate compiler generated dependencies of target demo
 [100%] Built target demo

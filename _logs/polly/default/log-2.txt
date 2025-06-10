@@ -1,0 +1,46 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/home/software09/Software9-1/workspace/projects/lab07]> "which" "cmake"
+/usr/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/home/software09/Software9-1/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.22.1
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `--build`
+  `/home/software09/Software9-1/workspace/projects/lab07/_builds/default`
+  `--`
+]
+[/home/software09/Software9-1/workspace/projects/lab07]> "cmake" "--build" "/home/software09/Software9-1/workspace/projects/lab07/_builds/default" "--"
+-- [polly] Used toolchain: Default
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /home/software09/.hunter
+-- [hunter] [ Hunter-ID: 23f1b5a | Toolchain-ID: 347e47c | Config-ID: bf2be25 ]
+-- [hunter] GTEST_ROOT: /home/software09/.hunter/_Base/23f1b5a/347e47c/bf2be25/Install (ver.: 1.11.0)
+-- Found GTest: /home/software09/.hunter/_Base/23f1b5a/347e47c/bf2be25/Install/lib/cmake/GTest/GTestConfig.cmake (found version "1.11.0")
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/software09/Software9-1/workspace/projects/lab07/_builds/default
+Consolidate compiler generated dependencies of target print
+[ 50%] Built target print
+Consolidate compiler generated dependencies of target demo
+[100%] Built target demo
+Execute command: [
+  `ctest`
+]
+[/home/software09/Software9-1/workspace/projects/lab07/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+
